@@ -28,12 +28,20 @@ void	ft_creation_map(t_vars *vars)
 	ft_creation(vars);
 	p2herox = vars->pherox / 64;
 	p2heroy = vars->pheroy / 64;
+	ft_verif_forme(vars, &data);
 	ft_verif_wall(vars);
 	ft_verif_inside(vars, &data);
-	ft_verif_forme(vars, &data);
 	backtracking(p2herox, p2herox, vars);
-	if (vars->r != '1' && vars->w != vars->i)
+	if (vars->r != 1)
+	{
+		ft_printf("ERROR\n-NO EXIT ACCESS-\n");
 		ft_destroy(vars);
+	}
+	if (vars->w != vars->i)
+	{
+		ft_printf("ERROR\n-NO COLLECTIBLE ACCESS-\n");
+		ft_destroy(vars);
+	}
 }
 
 int	deal_key(int key, t_vars *vars)

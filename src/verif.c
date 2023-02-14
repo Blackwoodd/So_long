@@ -52,8 +52,8 @@ void	ft_verif_forme(t_vars *vars, t_data *data)
 		{
 			if (data->t != data->u)
 			{
-				printf ("ERROR\n");
-				printf ("-BAD FORME-\n");
+				ft_printf ("ERROR\n");
+				ft_printf ("-BAD FORME-\n");
 				ft_destroy2(vars);
 			}	
 			data->t = -1;
@@ -98,7 +98,7 @@ void	ft_verif_wall(t_vars *vars)
 		if (vars->bu[len] == '\n')
 		{	
 			if ((vars->bu[len - 1] != '1' || vars->bu[len + 1] != '1'))
-				ft_destroy(vars);
+				ft_error3(vars);
 		}
 		len++;
 	}

@@ -29,7 +29,7 @@ void	ft_error3(t_vars *vars)
 {
 	ft_printf ("ERROR\n");
 	ft_printf ("-FOR BAD WALL-\n");
-	ft_destroy2(vars);
+	ft_destroy(vars);
 }
 
 void	ft_destroy2(t_vars *vars)
