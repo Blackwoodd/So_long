@@ -2,7 +2,7 @@ NAME	= so_long
 
 SRCS	= src/main.c src/mouvement.c src/exit.c src/verif.c src/lecture_map.c src/position.c src/init_game.c src/destroy.c
 LIB		= ft_printf/printf.a ft_libft/libft.a
-MLXFLAGS = -L ./minilibx -lmlx -Ilmlx -lXext -lX11
+MLXFLAGS = -L ./minilibx/libmlx.a ./minilibx/libmlx_Linux.a -Ilmlx -lXext -lX11
 OBJS	= $(SRCS:.c=.o)
 RM		= rm -f
 CC		= @cc
