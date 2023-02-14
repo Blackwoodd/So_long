@@ -10,13 +10,14 @@ CFLAGS	= -Wall -Wextra -Werror -g3
 
 all	: 	$(NAME)
 
-$(MLX)	:	@make -C minilibx
+$(MLX)	:	
+			@make -C minilibx
 
 $(NAME)	:  $(MLX)	$(OBJS)
 			@make --no-print-directory -C ft_printf/
 			$(CC) $(CFLAGS) $(OBJS) $(LIB) $(MLXFLAGS) -o $(NAME)
 					
-clean	:	
+clean	:
 			$(RM) $(OBJS)
 
 fclean	:	clean
