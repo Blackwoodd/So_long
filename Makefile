@@ -1,4 +1,4 @@
-NAME	= CHOIX_MAP
+NAME	= so_long
 
 SRCS	= src/main.c src/mouvement.c src/exit.c src/verif.c src/lecture_map.c src/position.c src/init_game.c src/destroy.c
 LIB		= ft_printf/printf.a ft_libft/libft.a
