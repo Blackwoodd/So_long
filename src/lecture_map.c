@@ -16,9 +16,9 @@ void	ft_lecture_map2(t_vars *vars)
 {
 	while (vars->bu[vars->lenmap] != '\n')
 	{
-		vars->xmap++;
 		if (vars->xmap == 41)
 			ft_error2(vars);
+		vars->xmap++;
 		vars->lenmap++;
 	}
 	while (vars->bu[vars->lenmap])

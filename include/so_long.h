@@ -6,7 +6,7 @@
 /*   By: nbechon <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/16 10:07:04 by nbechon           #+#    #+#             */
-/*   Updated: 2023/01/18 14:29:50 by nbechon          ###   ########.fr       */
+/*   Updated: 2023/03/16 16:32:05 by nbechon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,12 @@
 # include "../minilibx/mlx_int.h"
 # include "../minilibx/mlx.h"
 
-// # if BUFFER_SIZE != 1000
-// #  undef BUFFER_SIZE
-// # endif
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 1000
+#  define BUFFER_SIZE 1500
 # endif
 # define PIXEL_WIN	64
 
-typedef struct s_data
+typedef struct	s_data
 {
 	int	e;
 	int	c;
@@ -34,7 +31,7 @@ typedef struct s_data
 	int	len2;
 	int	u;
 	int	t;
-}				t_data;
+}		t_data;
 
 typedef struct s_vars
 {
