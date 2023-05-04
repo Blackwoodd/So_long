@@ -92,6 +92,9 @@ void	ft_init(t_vars *vars)
 	return ;
 }
 
+// Voila le int main , il utilise la minilibx pour fonctioner , ici "vars" est la strucutre. On a "ft_init_game" pour initialiser ma structure , "ft_verif_ber" pour verefier que la map sois bien un .ber
+// "ft_lecture_map" pour lire la map et créé. L'ensemble des fonction "mlx_init", "mlx_new_window", "mlx_key_hook" , "mlx_hook" et "mlx_loop" sont founi par la minilibx et permettent du fonctionnement
+// graphique. 
 int	main(int argc, char *argv[])
 {
 	t_vars	vars;
